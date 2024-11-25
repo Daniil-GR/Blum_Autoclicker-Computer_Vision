@@ -12,6 +12,6 @@
 
 3. Следовать инструкции скрипта в CMD.
 
-______Подписка AutoClicker Private_____
+_____Подписка AutoClicker Private_____
 
 Что дает подписка? Преимущества описаны здесь: t.me/autoclicker_private
