@@ -12,6 +12,8 @@
 
 3. Следовать инструкции скрипта в CMD.
 
+## Мой основной канал: https://t.me/+x9SdysG9HHoxYjAy
+
 _____Подписка AutoClicker Private_____
 
 Что дает подписка? Преимущества описаны здесь: t.me/autoclicker_private
