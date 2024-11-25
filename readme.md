@@ -16,4 +16,4 @@
 
 _____Подписка AutoClicker Private_____
 
-Что дает подписка? Преимущества описаны здесь: t.me/autoclicker_private
+Что дает подписка? Преимущества описаны здесь: https://t.me/autoclicker_private
