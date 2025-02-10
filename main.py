@@ -14,6 +14,16 @@ import win32con
 
 from colorama import Fore, Style, init
 
+AUTOCLICKER_TEXT = """
+
+██████╗░███████╗██╗░░░██╗░█████╗░██████╗░██╗░░░██╗██████╗░████████╗░█████╗░░██████╗░██████╗░
+██╔══██╗██╔════╝██║░░░██║██╔══██╗██╔══██╗╚██╗░██╔╝██╔══██╗╚══██╔══╝██╔══██╗██╔════╝░██╔══██╗
+██║░░██║█████╗░░╚██╗░██╔╝██║░░╚═╝██████╔╝░╚████╔╝░██████╔╝░░░██║░░░██║░░██║██║░░██╗░██████╔╝
+██║░░██║██╔══╝░░░╚████╔╝░██║░░██╗██╔══██╗░░╚██╔╝░░██╔═══╝░░░░██║░░░██║░░██║██║░░╚██╗██╔══██╗
+██████╔╝███████╗░░╚██╔╝░░╚█████╔╝██║░░██║░░░██║░░░██║░░░░░░░░██║░░░╚█████╔╝╚██████╔╝██║░░██║
+╚═════╝░╚══════╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░░░░░░░╚═╝░░░░╚════╝░░╚═════╝░╚═╝░░╚═╝
+"""
+
 # Инициализация для Windows
 init(autoreset=True)
 
@@ -30,14 +40,14 @@ class Logger:
         self.prefix = prefix
 
     def log(self, data: str, color=None):
-        if self.prefix == ">>>    AutoClicker Private: https://t.me/autoclicker_private  <<<   ":
+        if self.prefix == ">>>    Dev | Crypto_GR  <<<   ":
             print(f"{Fore.CYAN}{self.prefix}{Style.RESET_ALL} {data}")
         else:
             color = color if color else ""
             print(f"{color}{self.prefix} {data}")
 
     def input(self, text: str, color=None):
-        if self.prefix == ">>>    AutoClicker Private: https://t.me/autoclicker_private  <<<   ":
+        if self.prefix == ">>>    Dev | Crypto_GR  <<<   ":
             return input(f"{Fore.CYAN}{self.prefix}{Style.RESET_ALL} {text}")
         else:
             color = color if color else ""
@@ -119,7 +129,7 @@ class AutoClicker:
         return False
 
     def click_color_areas(self):
-        windows = gw.getWindowsWithTitle("TelegramDesktop")
+        windows = gw.getWindowsWithTitle("Мини-приложение: Blum")
         if not windows:
             self.logger.log(f"Не найдено окна с заголовком: {self.window_title}")
             all_windows = gw.getAllTitles()
@@ -196,9 +206,9 @@ class AutoClicker:
 
 
 if __name__ == "__main__":
-    logger = Logger(">>>    AutoClicker Private: https://t.me/autoclicker_private  <<<   ")
-
-    logger.log("Поддержите автора, оформив подписку AutoClicker Private! Подписчики получают доступ к эксклюзивному контенту, ранний доступ к обновлениям, персональную поддержку и вступают в приватный чат единомышленников. Узнайте подробнее о подписке: https://t.me/c/2162069906/43")
+    logger = Logger(">>>    Dev | Crypto_GR  <<<   ")
+    logger.log(AUTOCLICKER_TEXT)
+    logger.log("Ежедневное использование FarmBot для TinyVerse - эффективно улучшает галактику: https://t.me/farm_cryptogr_bot")
     
     CLICK_IMAGES = [resource_path("media\\lobby-play.png"), resource_path("media\\continue-play.png")]
 
@@ -231,7 +241,7 @@ if __name__ == "__main__":
 
     logger.log('Перед началом игры нажмите клавишу "ё" (`) на клавиатуре, чтобы активировать режим автокликера.', color=Fore.YELLOW)
 
-    auto_clicker = AutoClicker("TelegramDesktop", logger, percentages=percentages, is_continue=is_continue)
+    auto_clicker = AutoClicker("Мини-приложение: Blum", logger, percentages=percentages, is_continue=is_continue)
 
     try:
         auto_clicker.click_color_areas()
