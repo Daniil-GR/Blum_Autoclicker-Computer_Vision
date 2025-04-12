@@ -12,8 +12,4 @@
 
 3. Следовать инструкции скрипта в CMD.
 
-## Мой основной канал: https://t.me/+x9SdysG9HHoxYjAy
-
-_____Подписка AutoClicker Private_____
-
-Что дает подписка? Преимущества описаны здесь: https://t.me/autoclicker_private
+Telegram: https://t.me/dev_crypto_gr
