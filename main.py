@@ -67,8 +67,8 @@ class AutoClicker:
         # 
         self.targets = {
             "act": {
-                "colors": ["#c9e100", "#bae70e"],
-                "nearby": ["#abff61", "#87ff27"],
+                "colors": ["#ff00e7", "#ccff20"],
+                "nearby": ["#ff00dc", "#e9fc77"],
                 "chance": self.percentage_click
             }
         }
